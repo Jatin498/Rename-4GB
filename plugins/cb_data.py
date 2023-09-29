@@ -14,6 +14,7 @@ from datetime import timedelta,datetime
 from helper.ffmpeg import take_screen_shot,fix_thumb
 from helper.progress import humanbytes
 from helper.set import escape_invalid_curly_brackets
+from helper import database
 
 log_channel = LOG_CHANNEL
 
