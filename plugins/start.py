@@ -11,10 +11,8 @@ from helper.database import  insert ,find_one,used_limit,usertype,uploadlimit,ad
 from pyrogram.file_id import FileId
 from helper.database import daily as daily_
 from helper.date import add_date ,check_expi
-UPDATES_CHANNEL = os.environ.get('UPDATES_CHANNEL',"")
 import datetime
 from datetime import date as date_
-STRING = os.environ.get("STRING","")
 log_channel = LOG_CHANNEL
 token = TOKEN
 botid = token.split(':')[0]
@@ -43,8 +41,7 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("ꜱᴜʙꜱᴄʀɪʙᴇ ᴄʜᴀɴɴᴇʟ 🇮🇳" ,url="https://t.me/KPSBots") ], 
-	[InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🧐", url="https://youtube.com/@Divin_Dass") ]  ]))
+	 [[ InlineKeyboardButton("Oᴡɴᴇʀ" ,url="https://t.me/cant_think_1") ], [InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🧐", url="https://t.me/WizardBotHelper") ]  ]))
 	    return
 	if id:
 	    if old == True:
@@ -56,8 +53,7 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("ꜱᴜʙꜱᴄʀɪʙᴇ ᴄʜᴀɴɴᴇʟ 🇮🇳" ,url="https://t.me/WebXBots") ], 
-	[InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🧐", url="https://youtube.com/@Divin_Dass") ]  ]))
+	  [[ InlineKeyboardButton("Oᴡɴᴇʀ" ,url="https://t.me/cant_think_1") ], [InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🧐", url="https://t.me/WizardBotHelper") ]  ]))
 	        except:
 	             return
 	    else:
@@ -72,8 +68,7 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("ꜱᴜʙꜱᴄʀɪʙᴇ ᴄʜᴀɴɴᴇʟ 🇮🇳" ,url="https://t.me/WebXBots") ], 
-	[InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🧐", url="https://youtube.com/@Divin_Dass") ]  ]))
+	 [[ InlineKeyboardButton("Oᴡɴᴇʀ" ,url="https://t.me/cant_think_1") ], [InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🧐", url="https://t.me/WizardBotHelper") ]  ]))
 	         
 
 
@@ -111,9 +106,9 @@ async def send_doc(client,message):
        c_time = time.time()
        
        if user_type=="Free":
-           LIMIT = 600
+           LIMIT = 1 
        else:
-           LIMIT = 50
+           LIMIT = 1
        then = used_date+ LIMIT
        left = round(then - c_time)
        conversion = datetime.timedelta(seconds=left)
@@ -153,7 +148,7 @@ async def send_doc(client,message):
        		            total_rename(int(botid),prrename)
        		            total_size(int(botid),prsize,file.file_size)
        		        else:
-       		            uploadlimit(message.from_user.id,2147483648)
+       		            uploadlimit(message.from_user.id,214748364800)
        		            usertype(message.from_user.id,"Free")
 	
        		            await message.reply_text(f'Your Plane Expired On {buy_date}',quote=True)
