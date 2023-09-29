@@ -16,7 +16,7 @@ DB_URL = os.getenv("DB_URL", "mongodb+srv://f2l:f2l@cluster0.fjjge1y.mongodb.net
 
 
 #  Optionnal variables
-
+STRING = os.environ.get("STRING", "")
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001728546137")) 
 UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "Wizard_Bots") # For Force Subscription
 BROADCAST_AS_COPY = os.environ.get('BROADCAST_AS_COPY', "True") # true if forward should be avoided
