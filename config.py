@@ -19,6 +19,6 @@ DB_URL = os.getenv("DB_URL", "mongodb+srv://f2l:f2l@cluster0.fjjge1y.mongodb.net
 
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001728546137")) 
 UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "Wizard_Bots") # For Force Subscription
-# BROADCAST_AS_COPY = os.environ.get('BROADCAST_AS_COPY', "True") # true if forward should be avoided
-# WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", 'https://graph.org//file/20df394e337acdfcc4b43.jpg') # image when someone hit /start # image when someone hit /start
+BROADCAST_AS_COPY = os.environ.get('BROADCAST_AS_COPY', "True") # true if forward should be avoided
+WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", 'https://graph.org//file/20df394e337acdfcc4b43.jpg') # image when someone hit /start # image when someone hit /start
 # LINK_BYPASS = "False"
