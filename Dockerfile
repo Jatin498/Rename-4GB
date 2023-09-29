@@ -1,11 +1,11 @@
 FROM python:3.10
 
-WORKDIR . .
+RUN apt -qq update && apt -qq install -y git ffmpeg
 
-COPY requirements.txt .
+RUN git clone https://github.com/kagutsuchi57/Rename-4GB /app
 
-RUN pip install -r requirements.txt
+WORKDIR /app
 
-COPY . .
+RUN pip install -U -r requirements.txt
 
-CMD ["python3", "bot.py"]
+CMD [ "python", "start.sh" ]
