@@ -75,7 +75,7 @@ async def start(client,message):
 
 @Client.on_message(filters.private &( filters.document | filters.audio | filters.video ))
 async def send_doc(client,message):
-       update_channel = UPDATES_CHANNEL
+       update_channel = UPDATE_CHANNEL
        user_id = message.from_user.id
        if update_channel :
        	try:
