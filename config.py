@@ -6,7 +6,7 @@ load_dotenv()
 
 API_ID = int(os.getenv("API_ID", "13675555"))
 API_HASH = os.environ.get("API_HASH", "c0da9c346d2c45dbc7ec49a05da9b2b6")
-TOKEN = os.environ.get("TOKEN", "6680969743:AAHpx2FWxrJDDBZTasyyUk05h7a0zG6aeMc")
+TOKEN = os.environ.get("TOKEN", "5304876457:AAEC0ZNDbYd32l1HEDRnvhMDn6-3NC7WHaI")
 ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS").split("5591954930")] if os.environ.get("ADMINS") else []
 ADMIN = ADMINS
 DB_NAME = os.environ.get("DB_NAME", "kagut")
@@ -17,8 +17,8 @@ DB_URL = os.getenv("DB_URL", "mongodb+srv://f2l:f2l@cluster0.fjjge1y.mongodb.net
 
 #  Optionnal variables
 
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "")) #1728546137
-UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "") # For Force Subscription
+LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001728546137")) 
+UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "Wizard_Bots") # For Force Subscription
 # BROADCAST_AS_COPY = os.environ.get('BROADCAST_AS_COPY', "True") # true if forward should be avoided
 # WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", 'https://graph.org//file/20df394e337acdfcc4b43.jpg') # image when someone hit /start # image when someone hit /start
 # LINK_BYPASS = "False"
