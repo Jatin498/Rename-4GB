@@ -90,7 +90,7 @@ async def doc(bot,update):
         caption = f"**{new_filename}**"
      if thumb:
      		ph_path = await bot.download_media(thumb)
-     	    Image.open(ph_path).convert("RGB").save(ph_path)
+     	    Image.open(ph_path).convert("RGB").save(ph_path) 
             img = Image.open(ph_path)
      	    img.resize((320, 320))
      	    img.save(ph_path, "JPEG")
