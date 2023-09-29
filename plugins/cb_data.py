@@ -4,7 +4,6 @@ from config import *
 from pyrogram.types import (  InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
-# from helper.database import *
 import os
 import random
 from PIL import Image
@@ -14,7 +13,7 @@ from datetime import timedelta,datetime
 from helper.ffmpeg import take_screen_shot,fix_thumb
 from helper.progress import humanbytes
 from helper.set import escape_invalid_curly_brackets
-from helper import database
+from helper.database import *
 
 log_channel = LOG_CHANNEL
 
