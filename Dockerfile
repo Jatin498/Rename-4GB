@@ -8,4 +8,4 @@ WORKDIR /app
 
 RUN pip install -U -r requirements.txt
 
-CMD [ "python", "start.sh" ]
+CMD [ "bash", "start.sh" ]
