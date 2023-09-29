@@ -35,4 +35,5 @@ if STRING:
         app.stop()
     
 else:
+    print("[INFO]: STARTING BOT CLIENT")
     bot.run()
