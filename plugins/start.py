@@ -15,8 +15,8 @@ UPDATES_CHANNEL = os.environ.get('UPDATES_CHANNEL',"")
 import datetime
 from datetime import date as date_
 STRING = os.environ.get("STRING","")
-log_channel = int(os.environ.get("LOG_CHANNEL",""))
-token = os.environ.get('TOKEN','')
+log_channel = LOG_CHANNEL
+token = TOKEN
 botid = token.split(':')[0]
 
 #Part of Day --------------------
