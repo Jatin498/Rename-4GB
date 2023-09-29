@@ -89,15 +89,15 @@ async def doc(bot,update):
      else:
         caption = f"**{new_filename}**"
      if thumb:
-     		ph_path = await bot.download_media(thumb)
-     	    Image.open(ph_path).convert("RGB").save(ph_path) 
-            img = Image.open(ph_path)
-     	    img.resize((320, 320))
-     	    img.save(ph_path, "JPEG")
-     	    c_time = time.time()
+         ph_path = await bot.download_media(thumb)
+         Image.open(ph_path).convert("RGB").save(ph_path)
+         img = Image.open(ph_path)
+         img.resize((320, 320))
+         img.save(ph_path, "JPEG")
+         c_time = time.time()
      		
      else:
-     		ph_path = None
+         ph_path = None
      
      value = 2090000000
      if value < file.file_size:
