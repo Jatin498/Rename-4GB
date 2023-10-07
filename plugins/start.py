@@ -24,7 +24,7 @@ if currentTime.hour < 12:
 	wish = "Good morning."
 elif 12 <= currentTime.hour < 12:
 	wish = 'Good afternoon.'
-elif wish = 'Good evening.'
+elif wish == 'Good evening.'
 
 #-------------------------------
 
