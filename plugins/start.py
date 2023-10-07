@@ -37,8 +37,8 @@ async def start(client,message):
 	except:
 	    await message.reply_text(text =f"""
 	Hello {wish} {message.from_user.first_name }
-	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it__
+	I am file renamer bot, Please sent any telegram 
+	**Document Or Video** and enter new filename to rename it
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
 	 [[ InlineKeyboardButton("Oᴡɴᴇʀ" ,url="https://t.me/cant_think_1") ], [InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🧐", url="https://t.me/WizardBotHelper") ]  ]))
@@ -64,8 +64,8 @@ async def start(client,message):
 	         uploadlimit(int(id),new_limit)
 	         await message.reply_text(text =f"""
 	Hello {wish} {message.from_user.first_name }
-	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it__
+	I am file renamer bot, Please sent any telegram 
+	**Document Or Video** and enter new filename to rename it
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
 	 [[ InlineKeyboardButton("Oᴡɴᴇʀ" ,url="https://t.me/cant_think_1") ], [InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🧐", url="https://t.me/WizardBotHelper") ]  ]))
@@ -81,7 +81,7 @@ async def send_doc(client,message):
        	try:
        		await client.get_chat_member(update_channel, user_id)
        	except UserNotParticipant:
-       		await message.reply_text("**__You are not subscribed my channel__** ",
+       		await message.reply_text("**You are not subscribed my channel** ",
        		reply_to_message_id = message.id,
        		reply_markup = InlineKeyboardMarkup(
        		[ [ InlineKeyboardButton("Support 🇮🇳" ,url=f"https://t.me/{update_channel}") ]   ]))
