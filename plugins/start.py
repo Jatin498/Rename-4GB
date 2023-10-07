@@ -21,10 +21,9 @@ botid = token.split(':')[0]
 currentTime = datetime.datetime.now()
 
 if currentTime.hour < 12:
-	wish = "Good morning."
-elif 12 <= currentTime.hour < 12:
-	wish = 'Good afternoon.'
-elif wish == 'Good evening.'
+	wish = "Good Morning."
+elif currentTime.hour > 12:
+	wish = 'Good Evening.'
 
 #-------------------------------
 
