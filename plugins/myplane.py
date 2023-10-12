@@ -24,7 +24,7 @@ async def start(client,message):
 	     used_limit(message.from_user.id,0)
 	_newus = find_one(message.from_user.id)
 	used = _newus["used_limit"]
-	limit = _newus["uploadlimit"]
+	limit = 50045566756
 	remain = int(limit)- int(used)
 	user =  _newus["usertype"]
 	ends = _newus["prexdate"]
