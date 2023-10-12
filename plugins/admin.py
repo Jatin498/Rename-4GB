@@ -34,7 +34,7 @@ async def vip1(bot,update):
 	usertype(user_id,"VIP1")
 	addpre(user_id)
 	await update.message.edit("Added successfully To Premium Upload limit 10 GB")
-	await bot.send_message(user_id,"Hey Ur Upgraded To VIP 1 check your plan here /myplan")
+	await bot.send_message(user_id,"Hey you are Upgraded To VIP 1 check your plan here /myplan")
 
 @Client.on_callback_query(filters.regex('vip2'))
 async def vip2(bot,update):
@@ -45,4 +45,4 @@ async def vip2(bot,update):
 	usertype(user_id, "VIP2")
 	addpre(user_id)
 	await update.message.edit("Added successfully To Premium Upload limit 50 GB")
-	await bot.send_message(user_id,"Hey Ur Upgraded To VIP 2 check your plan here /myplan")
+	await bot.send_message(user_id,"Hey you are Upgraded To VIP 2 check your plan here /myplan")
