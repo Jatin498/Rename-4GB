@@ -109,7 +109,7 @@ async def send_doc(client,message):
        		value = 9947483648
        		used_ = find_one(message.from_user.id)
        		used = used_["used_limit"]
-       		limit = used_["uploadlimit"]
+       		limit = 50045566756
        		expi = daily - int(time.mktime(time.strptime(str(date_.today()), '%Y-%m-%d')))
        		if expi != 0:
        			today = date_.today()
