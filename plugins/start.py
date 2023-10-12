@@ -26,9 +26,7 @@ async def start(client,message):
 	    id = message.text.split(' ')[1]
 	except:
 	    await message.reply_text(text =f"""
-	Hello {message.from_user.first_name }
-	I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it
+	Hello {message.from_user.first_name }\nI am file renamer bot, Please sent any telegram **Document Or Video** and enter new filename to rename it
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
 	 [[ InlineKeyboardButton("Oᴡɴᴇʀ" ,url="https://t.me/cant_think_1") ], [InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🧐", url="https://t.me/WizardBotHelper") ]  ]))
@@ -38,9 +36,7 @@ async def start(client,message):
 	        try:
 	            await client.send_message(id,"Your Friend already Using Our Bot")
 	            await message.reply_text(text =f"""
-	Hello {message.from_user.first_name }
-	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it__
+	Hello {message.from_user.first_name }\nI am file renamer bot, Please sent any telegram **Document Or Video** and enter new filename to rename it
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
 	  [[ InlineKeyboardButton("Oᴡɴᴇʀ" ,url="https://t.me/cant_think_1") ], [InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🧐", url="https://t.me/WizardBotHelper") ]  ]))
@@ -53,9 +49,7 @@ async def start(client,message):
 	         new_limit = limit + 104857600
 	         uploadlimit(int(id),new_limit)
 	         await message.reply_text(text =f"""
-	Hello {message.from_user.first_name }
-	I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it
+	Hello {message.from_user.first_name }\nI am file renamer bot, Please sent any telegram **Document Or Video** and enter new filename to rename it
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
 	 [[ InlineKeyboardButton("Oᴡɴᴇʀ" ,url="https://t.me/cant_think_1") ], [InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🧐", url="https://t.me/WizardBotHelper") ]  ]))
@@ -112,7 +106,7 @@ async def send_doc(client,message):
        		file = media.document or media.video or media.audio 
        		dcid = FileId.decode(file.file_id).dc_id
        		filename = file.file_name
-       		value = 2147483648
+       		value = 9947483648
        		used_ = find_one(message.from_user.id)
        		used = used_["used_limit"]
        		limit = used_["uploadlimit"]
