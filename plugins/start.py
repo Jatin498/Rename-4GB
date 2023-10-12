@@ -17,14 +17,6 @@ log_channel = LOG_CHANNEL
 token = TOKEN
 botid = token.split(':')[0]
 
-#Part of Day --------------------
-currentTime = datetime.datetime.now()
-
-if currentTime.hour < 12:
-	wish = "Good Morning."
-elif currentTime.hour > 12:
-	wish = 'Good Evening.'
-
 #-------------------------------
 
 @Client.on_message(filters.private & filters.command(["start"]))
@@ -34,7 +26,7 @@ async def start(client,message):
 	    id = message.text.split(' ')[1]
 	except:
 	    await message.reply_text(text =f"""
-	Hello {wish} {message.from_user.first_name }
+	Hello {message.from_user.first_name }
 	I am file renamer bot, Please sent any telegram 
 	**Document Or Video** and enter new filename to rename it
 	""",reply_to_message_id = message.id ,  
@@ -46,7 +38,7 @@ async def start(client,message):
 	        try:
 	            await client.send_message(id,"Your Friend already Using Our Bot")
 	            await message.reply_text(text =f"""
-	Hello {wish} {message.from_user.first_name }
+	Hello {message.from_user.first_name }
 	__I am file renamer bot, Please sent any telegram 
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
@@ -61,7 +53,7 @@ async def start(client,message):
 	         new_limit = limit + 104857600
 	         uploadlimit(int(id),new_limit)
 	         await message.reply_text(text =f"""
-	Hello {wish} {message.from_user.first_name }
+	Hello {message.from_user.first_name }
 	I am file renamer bot, Please sent any telegram 
 	**Document Or Video** and enter new filename to rename it
 	""",reply_to_message_id = message.id ,  
