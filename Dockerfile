@@ -1,5 +1,5 @@
 #python version
-FROM python:3.10
+FROM python:3.11.6
 
 #setting timezone
 ENV TZ=Asia/Kolkata
